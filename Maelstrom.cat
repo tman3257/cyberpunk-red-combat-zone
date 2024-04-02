@@ -1,0 +1,1264 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="2791-45f6-4d9e-61ab" name="Maelstrom" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="afa1-b726-9683-9875" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Trevor Mancuso" type="catalogue">
+  <entryLinks>
+    <entryLink id="131e-8ece-f779-1881" name="Berserker" hidden="false" collective="false" import="true" targetId="79d2-278f-9f97-45b1" type="selectionEntry"/>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="79d2-278f-9f97-45b1" name="Berserker" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="0298-1347-ce39-a3e7" name="Berserker" hidden="false" typeId="8611-25b4-defb-1ee9" typeName="Model">
+          <modifierGroups>
+            <modifierGroup>
+              <conditions>
+                <condition field="selections" scope="79d2-278f-9f97-45b1" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="3365-6be8-cfd1-790b" type="equalTo"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" field="ac51-b024-db04-dbf6" value="G/G/Y"/>
+                <modifier type="set" field="f281-331f-4ec2-2ce5" value="1"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <characteristics>
+            <characteristic name="Reflexes" typeId="56da-db99-56de-1ec4">2</characteristic>
+            <characteristic name="Ranged" typeId="a5d4-14f6-4193-0f5e"/>
+            <characteristic name="Melee" typeId="61c8-6695-7ebd-fd32">2</characteristic>
+            <characteristic name="Medical" typeId="715d-64ea-069b-eca6">1</characteristic>
+            <characteristic name="Tech" typeId="b8f7-af69-4ddd-a184"/>
+            <characteristic name="Influence" typeId="5159-880b-9641-2804"/>
+            <characteristic name="Actions" typeId="ac51-b024-db04-dbf6">G/Y/Y</characteristic>
+            <characteristic name="Street Cred" typeId="f281-331f-4ec2-2ce5"/>
+            <characteristic name="Armor" typeId="ab4f-59ec-30b2-2943"/>
+          </characteristics>
+        </profile>
+        <profile id="7a2c-45aa-2572-c2e9" name="Rage" hidden="false" typeId="d76c-7671-68ce-9cf5" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="626d-d6ab-606b-734e">If the first action of this model&apos;s activation is a melee attack, it gains Accurate.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="ea2a-1e31-3ed2-9a52" name="Faction: Maelstrom" hidden="false" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+        <categoryLink id="ec48-a3ff-c3cb-34f0" name="Model" hidden="false" targetId="3be9-174e-c64d-9fdf" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="3365-6be8-cfd1-790b" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2346-f977-22b7-1f7d" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="68eb-bc38-5f43-a20b" name="Gear" hidden="false" collective="false" import="true" targetId="c4a8-5c2e-bb5d-bff4" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="18"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="c4a8-5c2e-bb5d-bff4" name="Gear" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="e0c4-d809-e44a-9c4e" name="Improvised Armor Plating" hidden="false" collective="false" import="true" type="upgrade" flatten="false" collapsible="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b451-c515-c222-37a6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c942-4712-513d-34e9" name="Improvised Armor Plating" hidden="false" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">0</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c"/>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b">2</characteristic>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02"/>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Bulky, Armor</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="0e47-726e-f501-3aa5" name="Armor" hidden="false" targetId="1bca-a289-a3ee-f9f7" type="rule"/>
+            <infoLink id="c67e-d961-a111-cb7b" name="Bulky" hidden="false" targetId="5848-f9c0-8cdf-80c7" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="5085-e91d-b285-68ed" name="Faction: Maelstrom" hidden="false" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="5"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Grapple Gun" hidden="false" id="c584-61ab-2944-aefa" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2151-f80f-e24c-6ba0" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Grapple Gun" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="937e-84ba-f19c-a961">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">0</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c"/>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02"/>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d"/>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e">Discard during this model&apos;s activation to climb GREEN without using an Action token or rolling.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="3f00-df82-218b-bf58" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="2"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cyberdeck" hidden="false" id="6293-10b2-99c9-5d69" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9c6c-8298-9a0d-5289" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Cyberdeck" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="2218-b46c-f1c-14f2">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">0</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c"/>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02"/>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Cybergear</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e">This model gains Netrunner.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Cybergear" hidden="false" id="3a32-186b-ed5a-3d97" type="rule" targetId="55e8-e658-fc49-3197"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="3617-2835-ca56-5f1d" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" hidden="false" id="d7dc-8a8-1147-cfa4" typeId="d7c3-c1d8-9906-a288" value="2"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heavy Armorjack" hidden="false" id="eb59-486f-1f78-5394" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6f1-6c52-2b91-b080" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Heavy Armorjack" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="c085-1ddf-7bf4-e89e">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">4</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c"/>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b">3</characteristic>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02"/>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Armor</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Armor" hidden="false" id="8a7c-1cdf-8b12-3711" type="rule" targetId="1bca-a289-a3ee-f9f7"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="c975-8af8-667d-27c0" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="10"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sledgehammer" hidden="false" id="9f42-242b-56d7-50c9" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="da1b-257a-e1-fd47" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c5c-28e1-4320-9484"/>
+          </constraints>
+          <profiles>
+            <profile name="Sledgehammer" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="e63a-c8f3-7cb0-d4f2">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">0</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">2</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c">R</characteristic>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02">Melee</characteristic>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Deadly, Stun 1, Difficult</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Deadly" hidden="false" id="87ca-95c7-2487-e28e" type="rule" targetId="7b4a-dee1-5f67-94e9"/>
+            <infoLink name="Stun" hidden="false" id="3473-3aa8-4b4d-87c6" type="rule" targetId="42-31eb-82d1-3701"/>
+            <infoLink name="Difficult" hidden="false" id="5750-60aa-b769-2d7f" type="rule" targetId="afe5-b714-ccf1-bff2"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="7aa5-3c87-5b75-acba" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" hidden="false" id="97fe-85c1-95fe-fa62" typeId="d7c3-c1d8-9906-a288" value="2"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="SMG" hidden="false" id="a5d-112-81a3-4307" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b294-2f8b-d33-78d0" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="SMG" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="d06-b612-fc99-e4bd">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">0</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c">R/Y/G</characteristic>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02">Ranged</characteristic>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Suppression</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Suppression" hidden="false" id="ac93-9965-e1-621c" type="rule" targetId="a53c-a637-e240-5231"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="88e3-78fa-34a8-13d4" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="7"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heavy Pistol" hidden="false" id="8df2-27f6-69d5-3722" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ed4c-b75-c537-1fe0" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Heavy Pistol" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="3e37-640f-e565-cabd">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">0</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c">R/Y/G</characteristic>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02">Ranged</characteristic>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Deadly Crits</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Deadly Crits" hidden="false" id="8c36-b3f9-efaa-e078" type="rule" targetId="94a9-8053-4965-435e"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="fc46-fe6a-7f79-8eb9" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" hidden="false" id="8d3a-fcbb-be79-4fbf" typeId="d7c3-c1d8-9906-a288" value="2"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Spikey Leathers" hidden="false" id="1ecc-53fe-9306-c4bb" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="2b7-72bd-5190-5757" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc0b-ac02-3a1-a94f"/>
+          </constraints>
+          <profiles>
+            <profile name="Spikey Leathers" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="73b4-80a9-4df8-43da">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">0</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">2</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c"/>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02"/>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d"/>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e">When a rival Brawling with this model Fumbles an action, they suffer a wound.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="e615-3ccc-eece-468b" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="1"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Pneumatic Cyber-Fist" hidden="false" id="359f-1de1-1007-5bae" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="8569-516f-476-7364" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6366-d43b-3f86-320f"/>
+          </constraints>
+          <profiles>
+            <profile name="Pneumatic Cyber-Fist" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="9e29-4ad9-e69e-e12">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">1</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">2</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c">R</characteristic>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02">Melee</characteristic>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Cybergear, Dangerous, Deadly</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Cybergear" hidden="false" id="af07-1453-ae1d-b7f" type="rule" targetId="55e8-e658-fc49-3197"/>
+            <infoLink name="Dangerous" hidden="false" id="2e55-a565-2a95-590" type="rule" targetId="7862-eb7f-e9bb-66e4"/>
+            <infoLink name="Deadly" hidden="false" id="4d10-2be-5816-4191" type="rule" targetId="7b4a-dee1-5f67-94e9"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="1fc7-7aed-3077-2172" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="6"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Light Armorjack" hidden="false" id="7814-7f78-a23e-77f9" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e9bf-d2a4-93c4-63d4" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Light Armorjack" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="1db1-f006-7b9f-cbe">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">1</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c"/>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b">2</characteristic>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02"/>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d"/>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="f809-dc3b-9467-bbf0" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="6"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Steroid Pack" hidden="false" id="c33d-511c-2848-6da4" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="922b-bc05-a1a9-252c" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Steroid Pack" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="2fa6-ea34-4723-a903">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">1</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c">R</characteristic>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02">Medical</characteristic>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d"/>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e">Target friendly model may make a YELLOW move for free and then make a Basic Melee attack with +1 to the roll for free.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="2d2-85fe-294a-b4b6" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="5"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="3d56-4dc3-aed2-a0cd" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3028-e6ab-28d4-1376" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Shotgun" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="23ed-7b0f-2a64-4152">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">1</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c">R</characteristic>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02">Ranged</characteristic>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Torrent, Deadly Crits</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Deadly Crits" hidden="false" id="1596-a8ee-15ac-b73" type="rule" targetId="94a9-8053-4965-435e"/>
+            <infoLink name="Torrent" hidden="false" id="6020-63e3-99f-604f" type="rule" targetId="cef-c0e1-6772-45f8"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="c9f2-e113-863d-cfb" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="5"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Grenade: Frag" hidden="false" id="a3e3-9387-60e5-59cb" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="57e-4ed0-3d66-c9d8" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Grenade: Frag" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="854b-7be7-a71e-e6c0">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">2</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c">Y/G</characteristic>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02">Reflex</characteristic>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Blast, Discard</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Blast" hidden="false" id="e1dc-1cf7-26f4-9b41" type="rule" targetId="841b-c365-59ff-6b5c"/>
+            <infoLink name="Discard" hidden="false" id="15a2-b2c1-3109-d9a5" type="rule" targetId="6038-8de9-a004-b6b9"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="20f7-c102-d746-184a" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" hidden="false" id="42a5-abca-ba37-3050" typeId="d7c3-c1d8-9906-a288" value="2"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Shoulder-Mounted Rocket" hidden="false" id="1ed6-bd69-7dca-7114" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="29eb-d9df-72c2-ede7" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Shoulder-Mounted Rocket" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="3e10-a1b3-afce-7c1">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">2</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c">R/Y/G</characteristic>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02">Tech</characteristic>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Cybergear, Blast, Discard</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Cybergear" hidden="false" id="9471-7954-c98c-78aa" type="rule" targetId="55e8-e658-fc49-3197"/>
+            <infoLink name="Blast" hidden="false" id="4e1d-f83f-7e0e-494b" type="rule" targetId="841b-c365-59ff-6b5c"/>
+            <infoLink name="Discard" hidden="false" id="c044-954d-c1ba-4b37" type="rule" targetId="6038-8de9-a004-b6b9"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="8ce3-6f57-4342-f520" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="3"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heavy SMG" hidden="false" id="794f-7485-a00e-5ac0" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ce01-98b3-d544-7412" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Heavy SMG" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="7257-f56f-f49c-b7c1">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">2</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c">R/Y/G</characteristic>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02">Ranged</characteristic>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Rapid 2, Suppression</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Rapid" hidden="false" id="962a-ae0f-d23d-304b" type="rule" targetId="87e8-95a8-9b0a-c27c"/>
+            <infoLink name="Suppression" hidden="false" id="e733-2be-3323-b6ed" type="rule" targetId="a53c-a637-e240-5231"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="5021-6c4b-74ab-a625" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="10"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ripper Doc Kit" hidden="false" id="2b0b-1f2b-4791-4a94" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8030-3df0-3871-1af7" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Ripper Doc Kit" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="fffe-3add-2537-1908">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">2</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c">R/Y/G</characteristic>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02">Medical</characteristic>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Heal 1</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Heal" hidden="false" id="3de6-e84c-9054-b5d9" type="rule" targetId="92e9-8f0-39e8-ad7e"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="53ce-cf14-f5fd-4815" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="10"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Virus-Infested Cyberware" hidden="false" id="9f49-80bc-7621-4a62" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6aa6-d2e9-4c28-ad1c" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Virus-Infested Cyberware" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="4755-788e-e95a-97c4">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">2</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c"/>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02"/>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Cybergear</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e">All of this model&apos;s actions which require a roll gain Dangerous. If this model wounds or is wounded by a rival character while Brawling, this model discards this Gear and the rival must equip it. This may happen multiple times per game.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Cybergear" hidden="false" id="6e8f-9c90-3d5c-ddf2" type="rule" targetId="55e8-e658-fc49-3197"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="4419-36c6-596c-824d" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Neural Reprogrammer" hidden="false" id="5ce-d284-1f86-bf27" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="787d-c206-d03f-e822" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Neural Reprogrammer" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="bf6a-5054-3719-fd93">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">3</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c"/>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02"/>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Cybergear</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e">This model may use its Tech Skill for any action it takes. Doing so makes that action Dangerous.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Cybergear" hidden="false" id="e977-8180-3c74-e887" type="rule" targetId="55e8-e658-fc49-3197"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="4da0-79ef-49f4-18af" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="5"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hydraulic Cyberarms" hidden="false" id="947f-b895-8894-5502" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="15b5-6ba1-1257-38c5" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Hydraulic Cyberarms" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="d6c7-dbe-2bd8-6d5">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">3</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c"/>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02"/>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Cybergear</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e">This model&apos;s Basic Melee Attack gains Push.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Cybergear" hidden="false" id="8350-8dac-6a46-4975" type="rule" targetId="55e8-e658-fc49-3197"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="1f4d-c69a-2229-f35" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="5"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cyber-Repair Systems" hidden="false" id="d00e-9e49-c9f7-5f28" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c17e-8ac7-b3dc-aa5f" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Cyber-Repair Systems" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="fa34-5451-3813-79d0">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">3</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c"/>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02"/>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Cybergear</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e">When this model would discard a Cybergear card (Gear or Objective), you may roll a GREEN die and add this model&apos;s Tech Skill Vs. the Obstacle die: if this model wins the roll, it may keep the item.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="4d4f-1ef5-3b7d-dd96" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="5"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sniper Rifle" hidden="false" id="3728-adcb-999b-8828" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f52b-d67e-dba-195f" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Sniper Rifle" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="93d2-8c57-6387-5784">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">3</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c">+</characteristic>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02">Ranged</characteristic>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Deadly Crits</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Deadly Crits" hidden="false" id="28f9-97c7-4c3e-d4aa" type="rule" targetId="94a9-8053-4965-435e"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="b899-60d2-9b79-ae74" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="8"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Assault Rifle" hidden="false" id="bd21-1c83-bd0f-2ec" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8a2f-ffb1-19c5-19b" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Assault Rifle" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="6b98-b0f6-b2b9-9965">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">4</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c">Y/G/+</characteristic>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02">Ranged</characteristic>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d"/>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e">Rapid 2 against targets within YELLOW or GREEN range.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Rapid" hidden="false" id="7479-92a8-ba43-fba3" type="rule" targetId="87e8-95a8-9b0a-c27c"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="96fb-2544-d596-b60d" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="10"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Airhypo" hidden="false" id="d3e6-2713-5d0a-cf81" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="43c8-5cf8-62dd-df1b" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Airhypo" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="4c07-79a7-b1df-4a16">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">0</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c"/>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02"/>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d"/>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e">Discard when you Inspire Your Team to Heal 1 on this model.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="36e7-942c-7854-60d6" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="2"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Smash" hidden="false" id="94bb-df1c-5a13-2705" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a6b-21d8-5d6e-56bb" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Smash" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="4559-dd46-5fb8-a4ba">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">4</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c"/>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02"/>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d"/>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e">When you Inspire Your Team, roll a RED die:
+  Fumble: Take 1 wound.
+  2+: Make a Basic Melee Attack for free.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="35a9-7af8-668c-dac9" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="5"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Stims" hidden="false" id="77f3-230c-6a1f-d333" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="abd6-3d43-303e-a37e" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Stims" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="5329-996-7e11-ffdb">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">4</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c"/>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02"/>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d"/>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e">When you Inspire Your Team, roll a RED die:
+  Fumble: Take 1 wound.
+  2+: Move RED for free.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="db21-75d2-eec4-c2a6" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="5"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Juice Injector" hidden="false" id="b2dc-8426-2322-8bc1" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cf2a-8893-9fb6-19b7" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Juice Injector" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="8562-46db-e26c-3d0b">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">5</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c"/>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02">Medical</characteristic>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Dangerous, Discard</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e">Choose one: this model swaps 1 YELLOW action token for a GREEN permanently OR it makes two basic melee or ranged attacks for free.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Dangerous" hidden="false" id="793e-8e48-6a06-17de" type="rule" targetId="7862-eb7f-e9bb-66e4"/>
+            <infoLink name="Discard" hidden="false" id="7f3c-1b86-7866-b56f" type="rule" targetId="6038-8de9-a004-b6b9"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="9dd9-367c-c691-180e" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="3"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Adrenal Pumps" hidden="false" id="5a27-a936-47de-a99e" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="e126-73e6-3d33-7e6a" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48d-a242-32d8-b81a"/>
+          </constraints>
+          <profiles>
+            <profile name="Adrenal Pumps" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="8979-1c3a-5c18-c7b0">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">5</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">2</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c"/>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02"/>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Cybergear</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e">When activated, if there are no obstacles in this model&apos;s Path of Attack to at least one rival, this model may move YELLOW for free.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Cybergear" hidden="false" id="7895-df34-3ef7-2b9" type="rule" targetId="55e8-e658-fc49-3197"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="e6de-5b3b-6f4-f554" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="5"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cyber-Legs" hidden="false" id="4b13-83e7-6584-fe8d" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="707d-9c3-6a4a-a74b" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Cyber-Legs" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="7a0c-c6ae-b6e3-1794">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">5</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c"/>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02"/>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Cybergear</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e">This model&apos;s basic move actions gain Accurate.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Cybergear" hidden="false" id="38eb-2e16-d234-a35a" type="rule" targetId="55e8-e658-fc49-3197"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="980e-4c34-7d83-fba2" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="5"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Brain-Box" hidden="false" id="f458-84c3-a2a2-f93a" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="39b2-5119-29d4-4d02" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Brain-Box" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="a582-c1ce-b60b-dee">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">6</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c"/>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02">+2 Tech</characteristic>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Cybergear</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e">This model gains Netrunner.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Cybergear" hidden="false" id="a5c4-c78d-3013-f6f" type="rule" targetId="55e8-e658-fc49-3197"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="8ddc-cf87-7d4c-bfd7" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="10"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="dd69-2a50-585-9497" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="433a-ecae-7941-c273" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Grenade Launcher" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="6e64-c2ca-5876-7d5d">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">6</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c">G/+</characteristic>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02">Ranged</characteristic>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Bulky, Blast, Difficult, Indirect, Unwieldy</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Blast" hidden="false" id="f11d-2c2f-7a14-4431" type="rule" targetId="841b-c365-59ff-6b5c"/>
+            <infoLink name="Difficult" hidden="false" id="aedc-2975-8b8-b328" type="rule" targetId="afe5-b714-ccf1-bff2"/>
+            <infoLink name="Indirect" hidden="false" id="f5b8-12eb-3465-1079" type="rule" targetId="5c62-3537-ab95-ada4"/>
+            <infoLink name="Unwieldy" hidden="false" id="6d4a-d028-2731-3a0b" type="rule" targetId="3049-857f-21b5-c0eb"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="6dd-7478-5b51-4703" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="10"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Metalgear" hidden="false" id="f037-8142-9ab-1a42" collective="false" flatten="false" collapsible="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a1a4-d28d-190a-1177" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Metalgear" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="eb38-603a-5a19-8ed0">
+              <characteristics>
+                <characteristic name="SC" typeId="1a30-00f6-7148-46c5">6</characteristic>
+                <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e">1</characteristic>
+                <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c"/>
+                <characteristic name="Armor" typeId="ed11-1712-7176-ff4b">4</characteristic>
+                <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02"/>
+                <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Armor</characteristic>
+                <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e">This model&apos;s melee attacks gain Deadly Crits.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Armor" hidden="false" id="9901-e25-c41a-27a9" type="rule" targetId="1bca-a289-a3ee-f9f7"/>
+            <infoLink name="Deadly Crits" hidden="false" id="63a6-b8ac-f22f-ae35" type="rule" targetId="94a9-8053-4965-435e"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Faction: Maelstrom" hidden="false" id="e93f-804f-c89d-24b5" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="15"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Crusher" hidden="false" id="f8f2-e160-17cd-e892">
+      <categoryLinks>
+        <categoryLink targetId="3694-4d16-4c7e-93e3" id="bba7-7af7-e456-4030" primary="false" name="Faction: Maelstrom"/>
+        <categoryLink targetId="3be9-174e-c64d-9fdf" id="2c2f-181b-387c-667c" primary="true" name="Model"/>
+      </categoryLinks>
+      <costs>
+        <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="15"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Veteran" hidden="false" id="e33d-77c0-647-ac44" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50bd-4cfd-7324-d737" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="EB" hidden="false" id="64b0-f1a7-7af5-f46e" typeId="d7c3-c1d8-9906-a288" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Crusher" hidden="false" id="c321-311e-93f2-d634" typeId="8611-25b4-defb-1ee9" typeName="Model">
+          <characteristics>
+            <characteristic name="Reflexes" typeId="56da-db99-56de-1ec4">1</characteristic>
+            <characteristic name="Ranged" typeId="a5d4-14f6-4193-0f5e">2</characteristic>
+            <characteristic name="Melee" typeId="61c8-6695-7ebd-fd32">2</characteristic>
+            <characteristic name="Medical" typeId="715d-64ea-069b-eca6"/>
+            <characteristic name="Tech" typeId="b8f7-af69-4ddd-a184"/>
+            <characteristic name="Influence" typeId="5159-880b-9641-2804"/>
+            <characteristic name="Actions" typeId="ac51-b024-db04-dbf6">Y/Y</characteristic>
+            <characteristic name="Street Cred" typeId="f281-331f-4ec2-2ce5"/>
+            <characteristic name="Armor" typeId="ab4f-59ec-30b2-2943">2</characteristic>
+          </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="f8f2-e160-17cd-e892" childId="e33d-77c0-647-ac44" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="Y/Y/Y" field="ac51-b024-db04-dbf6"/>
+                <modifier type="set" value="1" field="f281-331f-4ec2-2ce5"/>
+                <modifier type="set" value="3" field="61c8-6695-7ebd-fd32"/>
+                <modifier type="set" value="3" field="ab4f-59ec-30b2-2943"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </profile>
+        <profile name="Brawler" hidden="false" id="7cdd-5479-81a6-b275" typeId="d76c-7671-68ce-9cf5" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="626d-d6ab-606b-734e">When this model is hit by a successful attack, refresh all of its Action tokens. This model ignores Unwieldy on Gear.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cybernetic Weapons" hidden="false" id="a54-79a-a5ec-f575" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear">
+          <characteristics>
+            <characteristic name="SC" typeId="1a30-00f6-7148-46c5"/>
+            <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e"/>
+            <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c"/>
+            <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+            <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02"/>
+            <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Deadly Crits</characteristic>
+            <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e">All of this model&apos;s attacks gain Deadly Crits.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Gear" hidden="false" id="f14e-98eb-4639-d4c8" type="selectionEntryGroup" targetId="c4a8-5c2e-bb5d-bff4"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Flenser" hidden="false" id="d844-afab-a6cc-c5eb">
+      <categoryLinks>
+        <categoryLink name="Faction: Maelstrom" hidden="false" id="59c7-91aa-fae5-5b46" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+        <categoryLink name="Model" hidden="false" id="5620-a7f7-749-7296" targetId="3be9-174e-c64d-9fdf" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="20"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Veteran" hidden="false" id="e450-8b9b-59e9-d349" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="993e-3574-6bf1-ebb1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="EB" hidden="false" id="32c1-d19e-5f6c-b5dd" typeId="d7c3-c1d8-9906-a288" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Flenser" typeId="8611-25b4-defb-1ee9" typeName="Model" hidden="false" id="e95c-5b62-c632-72dd">
+          <characteristics>
+            <characteristic name="Reflexes" typeId="56da-db99-56de-1ec4">2</characteristic>
+            <characteristic name="Ranged" typeId="a5d4-14f6-4193-0f5e"/>
+            <characteristic name="Melee" typeId="61c8-6695-7ebd-fd32">2</characteristic>
+            <characteristic name="Medical" typeId="715d-64ea-069b-eca6"/>
+            <characteristic name="Tech" typeId="b8f7-af69-4ddd-a184"/>
+            <characteristic name="Influence" typeId="5159-880b-9641-2804">2</characteristic>
+            <characteristic name="Actions" typeId="ac51-b024-db04-dbf6">G/Y/Y</characteristic>
+            <characteristic name="Street Cred" typeId="f281-331f-4ec2-2ce5"/>
+            <characteristic name="Armor" typeId="ab4f-59ec-30b2-2943">1</characteristic>
+          </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="d844-afab-a6cc-c5eb" childId="e450-8b9b-59e9-d349" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="G/G/Y" field="ac51-b024-db04-dbf6"/>
+                <modifier type="set" value="1" field="f281-331f-4ec2-2ce5"/>
+                <modifier type="set" value="3" field="61c8-6695-7ebd-fd32"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </profile>
+        <profile name="Mind Link" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="404e-56cc-4a4b-776f">
+          <characteristics>
+            <characteristic name="SC" typeId="1a30-00f6-7148-46c5"/>
+            <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e"/>
+            <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c">R/Y/G</characteristic>
+            <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+            <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02">Influence</characteristic>
+            <characteristic name="Keywords" typeId="80e-7a7d-565f-951d"/>
+            <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e">Activate a friendly model.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Wolver" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="433a-6abf-b23f-a4b9">
+          <characteristics>
+            <characteristic name="SC" typeId="1a30-00f6-7148-46c5"/>
+            <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e"/>
+            <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c">R</characteristic>
+            <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+            <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02"/>
+            <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Deadly Crits</characteristic>
+            <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Gear" hidden="false" id="9298-69bf-4c3-f149" type="selectionEntryGroup" targetId="c4a8-5c2e-bb5d-bff4"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Ranged Specialist" hidden="false" id="17e6-fcfe-194d-d3f8">
+      <categoryLinks>
+        <categoryLink name="Faction: Maelstrom" hidden="false" id="b2e2-f57e-43ac-7089" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+        <categoryLink name="Model" hidden="false" id="194a-db3-69f4-1ca4" targetId="3be9-174e-c64d-9fdf" primary="false"/>
+        <categoryLink targetId="58d7-a10c-11df-bc38" id="8ec5-5298-3ce6-f8ed" primary="true" name="Specialist"/>
+      </categoryLinks>
+      <costs>
+        <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="15"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Veteran" hidden="false" id="4ad3-1872-7fe7-21e6" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ead-4ab1-74f7-b4f9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="EB" hidden="false" id="7a0d-f5a2-6c5-15b4" typeId="d7c3-c1d8-9906-a288" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Ranged Specialist" typeId="8611-25b4-defb-1ee9" typeName="Model" hidden="false" id="ae24-2e0f-c4f-c97e">
+          <characteristics>
+            <characteristic name="Reflexes" typeId="56da-db99-56de-1ec4">2</characteristic>
+            <characteristic name="Ranged" typeId="a5d4-14f6-4193-0f5e">2</characteristic>
+            <characteristic name="Melee" typeId="61c8-6695-7ebd-fd32">1</characteristic>
+            <characteristic name="Medical" typeId="715d-64ea-069b-eca6"/>
+            <characteristic name="Tech" typeId="b8f7-af69-4ddd-a184"/>
+            <characteristic name="Influence" typeId="5159-880b-9641-2804"/>
+            <characteristic name="Actions" typeId="ac51-b024-db04-dbf6">Y/Y/Y</characteristic>
+            <characteristic name="Street Cred" typeId="f281-331f-4ec2-2ce5"/>
+            <characteristic name="Armor" typeId="ab4f-59ec-30b2-2943"/>
+          </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="17e6-fcfe-194d-d3f8" childId="4ad3-1872-7fe7-21e6" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="G/Y/Y" field="ac51-b024-db04-dbf6"/>
+                <modifier type="set" value="1" field="f281-331f-4ec2-2ce5"/>
+                <modifier type="set" value="" field="a5d4-14f6-4193-0f5e"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </profile>
+        <profile name="Neural Uplink" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="dbfa-23e5-bf84-d9ad">
+          <characteristics>
+            <characteristic name="SC" typeId="1a30-00f6-7148-46c5"/>
+            <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e"/>
+            <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c"/>
+            <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+            <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02">Tech</characteristic>
+            <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Cybergear</characteristic>
+            <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e">All visible friendly Gonks may move YELLOW.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Assault Rifle" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="2330-395b-4591-34d0">
+          <characteristics>
+            <characteristic name="SC" typeId="1a30-00f6-7148-46c5"/>
+            <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e"/>
+            <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c">Y/G/+</characteristic>
+            <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+            <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02">Ranged</characteristic>
+            <characteristic name="Keywords" typeId="80e-7a7d-565f-951d"/>
+            <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e">Rapid 2 against targets within YELLOW or GREEN range.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Gear" hidden="false" id="f6bf-f5fc-4c46-f1ab" type="selectionEntryGroup" targetId="c4a8-5c2e-bb5d-bff4"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="489a-8f0f-6dc3-f95d"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Ripper" hidden="false" id="34cb-fd6d-d84e-77e2">
+      <categoryLinks>
+        <categoryLink name="Faction: Maelstrom" hidden="false" id="846-ae34-9dd1-751c" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+        <categoryLink name="Model" hidden="false" id="377b-a658-f24d-8e1a" targetId="3be9-174e-c64d-9fdf" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="8"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Veteran" hidden="false" id="39e0-1c5b-cfe8-11b8" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee1c-786c-7b41-4fc0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="EB" hidden="false" id="9ae-43c6-a41e-13f8" typeId="d7c3-c1d8-9906-a288" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Ripper" typeId="8611-25b4-defb-1ee9" typeName="Model" hidden="false" id="a23c-971a-858b-8d7c">
+          <characteristics>
+            <characteristic name="Reflexes" typeId="56da-db99-56de-1ec4"/>
+            <characteristic name="Ranged" typeId="a5d4-14f6-4193-0f5e">2</characteristic>
+            <characteristic name="Melee" typeId="61c8-6695-7ebd-fd32">2</characteristic>
+            <characteristic name="Medical" typeId="715d-64ea-069b-eca6"/>
+            <characteristic name="Tech" typeId="b8f7-af69-4ddd-a184"/>
+            <characteristic name="Influence" typeId="5159-880b-9641-2804">1</characteristic>
+            <characteristic name="Actions" typeId="ac51-b024-db04-dbf6">Y/Y</characteristic>
+            <characteristic name="Street Cred" typeId="f281-331f-4ec2-2ce5"/>
+            <characteristic name="Armor" typeId="ab4f-59ec-30b2-2943"/>
+          </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="34cb-fd6d-d84e-77e2" childId="39e0-1c5b-cfe8-11b8" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="G/Y" field="ac51-b024-db04-dbf6"/>
+                <modifier type="set" value="1" field="f281-331f-4ec2-2ce5"/>
+                <modifier type="set" value="2" field="a5d4-14f6-4193-0f5e"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </profile>
+        <profile name="Bravado" typeId="d76c-7671-68ce-9cf5" typeName="Ability" hidden="false" id="51d-badb-7dd2-6c59">
+          <characteristics>
+            <characteristic name="Description" typeId="626d-d6ab-606b-734e">This model gains +1 to its melee attacks if another friendly model is visible.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Wolver" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="165a-e573-f15d-ecad">
+          <characteristics>
+            <characteristic name="SC" typeId="1a30-00f6-7148-46c5"/>
+            <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e"/>
+            <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c">R</characteristic>
+            <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+            <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02"/>
+            <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Deadly Crits</characteristic>
+            <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Gear" hidden="false" id="beef-421d-1d78-d7f3" type="selectionEntryGroup" targetId="c4a8-5c2e-bb5d-bff4"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Warlord" hidden="false" id="6529-fdb1-196e-46b3">
+      <categoryLinks>
+        <categoryLink name="Faction: Maelstrom" hidden="false" id="3786-d48d-6fae-468a" targetId="3694-4d16-4c7e-93e3" primary="false"/>
+        <categoryLink name="Model" hidden="false" id="f80e-c4e6-de07-7f40" targetId="3be9-174e-c64d-9fdf" primary="false"/>
+        <categoryLink targetId="c319-7a82-330a-d0ae" id="77b1-b4b6-59a-85d4" primary="true" name="Leader"/>
+      </categoryLinks>
+      <costs>
+        <cost name="EB" typeId="d7c3-c1d8-9906-a288" value="15"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Veteran" hidden="false" id="22a8-e95-d00d-9da4" collective="false">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bc5e-3bac-9258-4624" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="EB" hidden="false" id="ae39-29e-9cfd-b7fa" typeId="d7c3-c1d8-9906-a288" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Warlord" typeId="8611-25b4-defb-1ee9" typeName="Model" hidden="false" id="190f-4667-6fa0-c725">
+          <characteristics>
+            <characteristic name="Reflexes" typeId="56da-db99-56de-1ec4"/>
+            <characteristic name="Ranged" typeId="a5d4-14f6-4193-0f5e">1</characteristic>
+            <characteristic name="Melee" typeId="61c8-6695-7ebd-fd32">2</characteristic>
+            <characteristic name="Medical" typeId="715d-64ea-069b-eca6"/>
+            <characteristic name="Tech" typeId="b8f7-af69-4ddd-a184"/>
+            <characteristic name="Influence" typeId="5159-880b-9641-2804">1</characteristic>
+            <characteristic name="Actions" typeId="ac51-b024-db04-dbf6">G/Y/Y</characteristic>
+            <characteristic name="Street Cred" typeId="f281-331f-4ec2-2ce5"/>
+            <characteristic name="Armor" typeId="ab4f-59ec-30b2-2943">1</characteristic>
+          </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="6529-fdb1-196e-46b3" childId="22a8-e95-d00d-9da4" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="G/G/Y" field="ac51-b024-db04-dbf6"/>
+                <modifier type="set" value="1" field="f281-331f-4ec2-2ce5"/>
+                <modifier type="set" value="2" field="a5d4-14f6-4193-0f5e"/>
+                <modifier type="set" value="3" field="61c8-6695-7ebd-fd32"/>
+                <modifier type="set" value="2" field="5159-880b-9641-2804"/>
+                <modifier type="set" value="2" field="ab4f-59ec-30b2-2943"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="6529-fdb1-196e-46b3" childId="22a8-e95-d00d-9da4" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="G/G/G" field="ac51-b024-db04-dbf6"/>
+                <modifier type="set" value="2" field="f281-331f-4ec2-2ce5"/>
+                <modifier type="set" value="3" field="a5d4-14f6-4193-0f5e"/>
+                <modifier type="set" value="3" field="61c8-6695-7ebd-fd32"/>
+                <modifier type="set" value="2" field="5159-880b-9641-2804"/>
+                <modifier type="set" value="2" field="ab4f-59ec-30b2-2943"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </profile>
+        <profile name="Inspiring" typeId="d76c-7671-68ce-9cf5" typeName="Ability" hidden="false" id="662e-b026-2245-1e5e">
+          <characteristics>
+            <characteristic name="Description" typeId="626d-d6ab-606b-734e">After this model inflicts a wound in a Brawl, refresh up to one Action token on all other visible friendly characters.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="SMG" typeId="81f2-bfa5-cf53-eb7a" typeName="Gear" hidden="false" id="e602-a006-7a2b-6be5">
+          <characteristics>
+            <characteristic name="SC" typeId="1a30-00f6-7148-46c5"/>
+            <characteristic name="Rarity" typeId="0dde-2e1e-f535-065e"/>
+            <characteristic name="Range" typeId="5b7d-042c-0d06-fe6c">R/Y/G</characteristic>
+            <characteristic name="Armor" typeId="ed11-1712-7176-ff4b"/>
+            <characteristic name="Skill" typeId="8ede-885f-f4f2-8a02">Ranged</characteristic>
+            <characteristic name="Keywords" typeId="80e-7a7d-565f-951d">Suppression</characteristic>
+            <characteristic name="Rules" typeId="3d6d-6c4a-9297-266e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Gear" hidden="false" id="332f-5a89-66ad-387c" type="selectionEntryGroup" targetId="c4a8-5c2e-bb5d-bff4"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
